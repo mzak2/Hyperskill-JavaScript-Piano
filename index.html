@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Virtual Piano</title>
+</head>
+<body>
+<div class="container">
+    <div class="white-keys">
+        <kbd>A</kbd>
+        <kbd>S</kbd>
+        <kbd>D</kbd>
+        <kbd>F</kbd>
+        <kbd>G</kbd>
+        <kbd>H</kbd>
+        <kbd>J</kbd>
+    </div>
+    <div class="black-keys">
+        <kbd>W</kbd>
+        <kbd>E</kbd>
+        <kbd>T</kbd>
+        <kbd>Y</kbd>
+        <kbd>U</kbd>
+    </div>
+</div>
+<script>
+    document.addEventListener("keydown", keyPressed);
+    function keyPressed(e) {
+        let key_pressed = e.key.toLowerCase();
+        let audio;
+        switch (key_pressed) {
+            case "a":
+                audio = new Audio("sounds/A.mp3");
+                audio.play();
+                break;
+            case "s":
+                audio = new Audio("sounds/S.mp3");
+                audio.play();
+                break;
+            case "d":
+                audio = new Audio("sounds/D.mp3");
+                audio.play();
+                break;
+            case "f":
+                audio = new Audio("sounds/F.mp3");
+                audio.play();
+                break;
+            case "g":
+                audio = new Audio("sounds/G.mp3");
+                audio.play();
+                break;
+            case "h":
+                audio = new Audio("sounds/H.mp3");
+                audio.play();
+                break;
+            case "j":
+                audio = new Audio("sounds/J.mp3");
+                audio.play();
+                break;
+            case "w":
+                audio = new Audio("sounds/W.mp3");
+                audio.play();
+                break;
+            case "e":
+                audio = new Audio("sounds/E.mp3");
+                audio.play();
+                break;
+            case "t":
+                audio = new Audio("sounds/T.mp3");
+                audio.play();
+                break;
+            case "y":
+                audio = new Audio("sounds/Y.mp3");
+                audio.play();
+                break;
+            case "u":
+                audio = new Audio("sounds/U.mp3");
+                audio.play();
+                break;
+            default:
+                break;
+        }
+    }
+</script>
+</body>
+</html>
